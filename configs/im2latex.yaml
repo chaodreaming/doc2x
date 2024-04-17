@@ -1,0 +1,18 @@
+experiment: "doc2x"
+image_dir:
+  - "datas/im2latex/images"
+train_data:
+  - "datas/im2latex/train_labels.txt"
+val_data:
+  - "datas/im2latex/val_labels.txt"
+test_data:
+  - "datas/im2latex/test_labels.txt"
+start_val_epoch: 1
+epochs: 100
+lr: 0.0003
+min_seq_len: 0
+max_seq_len: 512
+model_dir: 'model/doc2x'
+pin_memory: true
+save_path: 'runs'
+patience: 1
